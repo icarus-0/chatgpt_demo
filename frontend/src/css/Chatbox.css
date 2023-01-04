@@ -2,15 +2,17 @@
     flex:1;
     background-color: #343541;
     position: relative;
+    overflow-y: scroll;
 }
 .chat-input-holder{
     padding:24px ;
-    position: absolute;
+    position: fixed;
+    text-align: center;
     bottom: 0;left: 0;right: 0;
 }
 .chat-input-textarea{
     background-color: #40414f;
-    width: 90%;
+    width: 50%;
     padding: 12px;
     color: white;
     font-size: 1.25em;
@@ -21,7 +23,20 @@
 }
 
 .chat-log{
-   
     text-align: left;
     
+    
+}
+
+.clear-button{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 6%;
+    color: white;
+    background-color: transparent;
+}
+
+.clear-button:hover{
+    background-color: rgba(248, 61, 61, 0.25);
 }
